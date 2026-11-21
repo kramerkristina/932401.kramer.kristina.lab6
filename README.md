@@ -39,10 +39,12 @@
 ## Скриншоты работы
 
 ### Главная страница и запрос погоды
-![Главная страница](screenshots/main.png)
+<img width="1804" height="898" alt="image" src="https://github.com/user-attachments/assets/b7b9f3dd-999c-40c6-921d-87895d12a62e" />
+
 
 ### Проверка API и обработки ошибок (404)
-![Ответ API](screenshots/api.png)
+<img width="850" height="79" alt="image" src="https://github.com/user-attachments/assets/e75dda45-8e95-4be7-89d5-94503625ae4d" />
+
 
 ### Работа Service Worker и офлайн-режим (DevTools → Application)
-![PWA и Offline](screenshots/pwa.png)
+<img width="1828" height="913" alt="image" src="https://github.com/user-attachments/assets/7a3322f2-0497-46de-9dd7-335ffb33d953" />
