@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Погода по городу | PWA</title>
+  
+  <link rel="stylesheet" href="/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3b82f6">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="active">Главная</a>
+    <a href="/about">О проекте</a>
+    <a href="/api/status" target="_blank">Статус API</a>
+  </nav>
+
+  <main class="container">
+    <h1>Прогноз погоды (Mock API)</h1>
+    <p class="subtitle">Доступные города: Moscow, Tomsk, London, Tokyo, Paris</p>
+
+    <div class="card search-box">
+      <input type="text" id="cityInput" placeholder="Введите город (например, Tomsk)" value="Tomsk">
+      
+      <div class="units-toggle">
+        <label>
+          <input type="radio" name="units" value="metric" checked> °C (Metric)
+        </label>
+        <label>
+          <input type="radio" name="units" value="imperial"> °F (Imperial)
+        </label>
+      </div>
+
+      <button id="getWeatherBtn">Узнать погоду</button>
+    </div>
+
+    <div id="resultContainer" class="card result-card hidden">
+      <h2 id="resCity">-</h2>
+      <div class="temp-badge"><span id="resTemp">-</span>°<span id="resUnits">C</span></div>
+      <p class="condition">Состояние: <strong id="resCondition">-</strong></p>
+    </div>
+
+    <div id="errorContainer" class="card error-card hidden">
+      <p id="errorText">Город не найден</p>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

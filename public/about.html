@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3b82f6">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/">Главная</a>
+    <a href="/about" class="active">О проекте</a>
+    <a href="/api/status" target="_blank">Статус API</a>
+  </nav>
+
+  <main class="container">
+    <div class="card" style="line-height: 1.6;">
+      <h1>О проекте</h1>
+      <p style="margin-bottom: 12px;">
+        Это простое веб-приложение для проверки погоды в пяти городах: <strong>Moscow, Tomsk, London, Tokyo и Paris</strong>.
+      </p>
+      <p style="margin-bottom: 12px;">
+        Нужно ввести название города и выбрать градусы (°C или °F) — сервер на Node.js и Express вернёт текущую температуру и состояние погоды. Если города нет в списке, появится сообщение об ошибке.
+      </p>
+      <p style="margin-bottom: 16px;">
+        Приложение работает как PWA: его можно установить на устройство и открывать даже без интернета.
+      </p>
+      <a href="/" class="btn-link">← Вернуться к погоде</a>
+    </div>
+  </main>
+</body>
+</html>
